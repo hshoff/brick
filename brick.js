@@ -3,16 +3,19 @@
   'use strict';
 
   var root = this,
-      previousBrick = root.Brick || {};
+      previousBrick = root.Brick || {},
+      Brick;
 
 
-  var Brick = root.Brick = function(options) {
-
-    noConflict: function() {
-      root.Brick = previousBrick;
-      return this;
-    }
+  Brick = root.Brick = function(options) {
 
   };
+
+
+  Brick.noConflict = function() {
+    root.Brick = previousBrick;
+    return this;
+  };
+
 
 })();
