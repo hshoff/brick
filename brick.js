@@ -1,10 +1,14 @@
-(function(){
+var root = this;
+
+(function($){
 
   'use strict';
 
+  console.log('|__Brick__|');
 
-  var root = this,
-      previousBrick = root.Brick || {},
+
+
+  var previousBrick = root.Brick || {},
       Brick;
 
 
@@ -19,4 +23,4 @@
   };
 
 
-})();
+})(jQuery);
