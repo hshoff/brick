@@ -45,11 +45,11 @@
     this.y = options.y || hCenter;
     this.vy = function(){
       if (this.r < 22) {
-        return SPEED - 3;
+        return SPEED - _.random(2,3);
       } else if (this.r < 26) {
-        return SPEED - 2;
+        return SPEED - _.random(1,2);
       } else if (this.r < 30) {
-        return SPEED - 1;
+        return SPEED - _.random(0,1);
       } else {
         return SPEED;
       }
