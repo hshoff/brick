@@ -4,7 +4,7 @@
       context = canvas.getContext('2d'),
       PI_2 = Math.PI * 2,
       RADIUS = 20,
-      NUM_CONFETTI = 100,
+      NUM_CONFETTI = 50,
       SPEED = 7,
       wCenter,
       hCenter;
