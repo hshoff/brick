@@ -76,11 +76,11 @@
   };
 
   Confetti.prototype.reset = function() {
-    this.y = -10;
+    this.y = -50;
   };
 
   Confetti.prototype.checkBounds = function() {
-    if (this.y > window.h || this.x > window.w) {
+    if ((this.y-this.r) > window.h || (this.x-this.r) > window.w) {
       this.reset();
       return;
     };
